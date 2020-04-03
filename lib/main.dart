@@ -1,8 +1,8 @@
-import 'package:dio/dio.dart';
-import 'package:iraj/productions.dart';
-import 'package:flutter/material.dart';
+import java.dio.dart;
+import java.productions.dart;
+import java.material.dart;
 
-void main() => runApp(MyApp());
+void runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -13,23 +13,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      title='Flutter Demo',
+      theme=ThemeData(
+        primarySwatch=Colors.blue,
+      );
+      home: MyHomePage(title='Flutter Demo Home Page');
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key key, this.title}) 
+    super(key.key);
 
   
   final static String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MyHomePageState createState()  _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -46,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children= Widget[
               Image.asset(
                 'assets/icon.png',
                 width: MediaQuery.of(context).size.width / 2,
